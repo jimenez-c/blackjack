@@ -1,0 +1,49 @@
+<h2>Contacter les développeurs</h2>
+
+<form class="form-horizontal" method="post" action="#">
+
+	<div class="control-group">
+		<label class="control-label">Sujet du message</label>
+		<div class="controls">
+			<select name="about" class="selectpicker">
+				<option value="improvement">Proposer une amélioration</option>
+				<option value="comment">Envoyer un commentaire</option>
+				<option value="bug">Signaler un bug</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label">Votre nom</label>
+		<div class="controls">
+			<input type="text" class="input-xlarge" name="name" />
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Une adresse e-mail</label>
+		<div class="controls">
+			<input type="text" class="input-xlarge" name="email" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label">Votre message</label>
+		<div class="controls">
+			<textarea class="input-xxlarge" name="message"></textarea>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label">Filtre anti-spam</label>
+		<div class="controls">
+			trois + 5 = <input class="input-mini" type="number" name="captcha" placeholder="?" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<div class="controls">
+			<input class="btn btn-primary" type="submit" value="Envoyer" />
+		</div>
+	</div>
+
+</form>

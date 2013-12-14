@@ -1,0 +1,204 @@
+
+/*********************************************/
+/*  GAME
+/*********************************************/
+body, html {
+
+}
+body {
+	background: #13714c; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #13714c 0%, #072b21 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#13714c), color-stop(100%,#072b21)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #13714c 0%,#072b21 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #13714c 0%,#072b21 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #13714c 0%,#072b21 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #13714c 0%,#072b21 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13714c', endColorstr='#072b21',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#table {
+	position: relative;
+}
+
+#table h3 {
+	color:#AAA;
+}
+
+
+.player {
+	text-align: center;
+	border-radius: 10px;
+	padding:5px;
+}
+
+.player.active {
+	background: rgba(0,0,0,0.5);
+}
+.player h3 {
+	margin:0;
+}
+
+#dealer {
+	padding: 5px;
+}
+
+.card {
+	background-image: url("../img/cards2.png");
+	background-repeat: no-repeat;
+	width:72px;
+	height: 96px;
+	position: absolute;
+}
+
+.cards {
+	position: relative;
+	width:100px;
+	height:96px;
+	margin: auto;
+}
+
+.card.pos2 {
+	left:15px;
+}
+.card.pos3 {
+	left:30px;
+}
+.card.pos4 {
+	left:45px;
+}
+.card.pos5 {
+	left:60px;
+}
+.card.pos6 {
+	left:75px;
+}
+
+#menu {
+	/* position: absolute;
+	bottom: 0; */
+	/* width:100%; */
+	/* height:70px; */
+	/* line-height: 70px; */
+}
+#menu .navbar-inner {
+	background: rgba(0,0,0,0.7);
+	border: none;
+	min-height: 70px;
+}
+#menu.navbar .btn {
+	margin:0 10px;
+	margin-top: 14px;
+}
+#menu .navbar-inner .center {
+	width:210px;
+	margin: auto;
+}
+
+div.alert {
+	position: absolute;
+	top:10px;
+	right:10%;
+}
+
+.card[data-card="11H"] { background-position: 0 -606px; width: 72px; height: 96px; }
+.card[data-card="11S"] { background-position: 0 -707px; width: 72px; height: 96px; }
+.card[data-card="12C"] { background-position: 0 -808px; width: 72px; height: 96px; }
+.card[data-card="12D"] { background-position: 0 -909px; width: 72px; height: 96px; }
+.card[data-card="12H"] { background-position: 0 -1010px; width: 72px; height: 96px; }
+.card[data-card="12S"] { background-position: 0 -1111px; width: 72px; height: 96px; }
+.card[data-card="13C"] { background-position: 0 -1212px; width: 72px; height: 96px; }
+.card[data-card="13D"] { background-position: 0 -1313px; width: 72px; height: 96px; }
+.card[data-card="13H"] { background-position: 0 -1414px; width: 72px; height: 96px; }
+.card[data-card="13S"] { background-position: 0 -1515px; width: 72px; height: 96px; }
+.card[data-card="1C"] { background-position: 0 -1616px; width: 72px; height: 96px; }
+.card[data-card="1D"] { background-position: 0 -1717px; width: 72px; height: 96px; }
+.card[data-card="1H"] { background-position: 0 -1818px; width: 72px; height: 96px; }
+.card[data-card="1S"] { background-position: 0 -1919px; width: 72px; height: 96px; }
+.card[data-card="2C"] { background-position: -77px 0; width: 72px; height: 96px; }
+.card[data-card="2D"] { background-position: -77px -101px; width: 72px; height: 96px; }
+.card[data-card="2H"] { background-position: -77px -202px; width: 72px; height: 96px; }
+.card[data-card="2S"] { background-position: -77px -303px; width: 72px; height: 96px; }
+.card[data-card="3C"] { background-position: -77px -404px; width: 72px; height: 96px; }
+.card[data-card="3D"] { background-position: -77px -505px; width: 72px; height: 96px; }
+.card[data-card="3H"] { background-position: -77px -606px; width: 72px; height: 96px; }
+.card[data-card="3S"] { background-position: -77px -707px; width: 72px; height: 96px; }
+.card[data-card="4C"] { background-position: -77px -808px; width: 72px; height: 96px; }
+.card[data-card="4D"] { background-position: -77px -909px; width: 72px; height: 96px; }
+.card[data-card="4H"] { background-position: -77px -1010px; width: 72px; height: 96px; }
+.card[data-card="4S"] { background-position: -77px -1111px; width: 72px; height: 96px; }
+.card[data-card="5C"] { background-position: -77px -1212px; width: 72px; height: 96px; }
+.card[data-card="5D"] { background-position: -77px -1313px; width: 72px; height: 96px; }
+.card[data-card="5H"] { background-position: -77px -1414px; width: 72px; height: 96px; }
+.card[data-card="5S"] { background-position: -77px -1515px; width: 72px; height: 96px; }
+.card[data-card="6C"] { background-position: -77px -1616px; width: 72px; height: 96px; }
+.card[data-card="6D"] { background-position: -77px -1717px; width: 72px; height: 96px; }
+.card[data-card="6H"] { background-position: -77px -1818px; width: 72px; height: 96px; }
+.card[data-card="6S"] { background-position: -77px -1919px; width: 72px; height: 96px; }
+.card[data-card="7C"] { background-position: -154px 0; width: 72px; height: 96px; }
+.card[data-card="7D"] { background-position: -154px -101px; width: 72px; height: 96px; }
+.card[data-card="7H"] { background-position: -154px -202px; width: 72px; height: 96px; }
+.card[data-card="7S"] { background-position: -154px -303px; width: 72px; height: 96px; }
+.card[data-card="8C"] { background-position: -154px -404px; width: 72px; height: 96px; }
+.card[data-card="8D"] { background-position: -154px -505px; width: 72px; height: 96px; }
+.card[data-card="8H"] { background-position: -154px -606px; width: 72px; height: 96px; }
+.card[data-card="8S"] { background-position: -154px -707px; width: 72px; height: 96px; }
+.card[data-card="9C"] { background-position: -154px -808px; width: 72px; height: 96px; }
+.card[data-card="9D"] { background-position: -154px -909px; width: 72px; height: 96px; }
+.card[data-card="9H"] { background-position: -154px -1010px; width: 72px; height: 96px; }
+.card[data-card="9S"] { background-position: -154px -1111px; width: 72px; height: 96px; }
+
+/*
+
+.card[data-card="1"] { background-position: -0px 0; width: 72px; height: 96px; }
+.card[data-card="2"] { background-position: -73px 0; width: 72px; height: 96px; }
+.card[data-card="3"] { background-position: -146px 0; width: 72px; height: 96px; }
+.card[data-card="4"] { background-position: -219px 0; width: 72px; height: 96px; }
+.card[data-card="5"] { background-position: -292px 0; width: 72px; height: 96px; }
+.card[data-card="6"] { background-position: -365px 0; width: 72px; height: 96px; }
+.card[data-card="7"] { background-position: -438px 0; width: 72px; height: 96px; }
+.card[data-card="8"] { background-position: -511px 0; width: 72px; height: 96px; }
+.card[data-card="9"] { background-position: -584px 0; width: 72px; height: 96px; }
+.card[data-card="10"] { background-position: -657px 0; width: 72px; height: 96px; }
+.card[data-card="11"] { background-position: -730px 0; width: 72px; height: 96px; }
+.card[data-card="12"] { background-position: -803px 0; width: 72px; height: 96px; }
+.card[data-card="13"] { background-position: -876px 0; width: 72px; height: 96px; }
+.card[data-card="14"] { background-position: -949px 0; width: 72px; height: 96px; }
+.card[data-card="15"] { background-position: -1022px 0; width: 72px; height: 96px; }
+.card[data-card="16"] { background-position: -1095px 0; width: 72px; height: 96px; }
+.card[data-card="17"] { background-position: -1168px 0; width: 72px; height: 96px; }
+.card[data-card="18"] { background-position: -1241px 0; width: 72px; height: 96px; }
+.card[data-card="19"] { background-position: -1314px 0; width: 72px; height: 96px; }
+.card[data-card="20"] { background-position: -1387px 0; width: 72px; height: 96px; }
+.card[data-card="21"] { background-position: -1460px 0; width: 72px; height: 96px; }
+.card[data-card="22"] { background-position: -1533px 0; width: 72px; height: 96px; }
+.card[data-card="23"] { background-position: -1606px 0; width: 72px; height: 96px; }
+.card[data-card="24"] { background-position: -1679px 0; width: 72px; height: 96px; }
+.card[data-card="25"] { background-position: -1752px 0; width: 72px; height: 96px; }
+.card[data-card="26"] { background-position: -1825px 0; width: 72px; height: 96px; }
+.card[data-card="27"] { background-position: -1898px 0; width: 72px; height: 96px; }
+.card[data-card="28"] { background-position: -1971px 0; width: 72px; height: 96px; }
+.card[data-card="29"] { background-position: -2044px 0; width: 72px; height: 96px; }
+.card[data-card="30"] { background-position: -2117px 0; width: 72px; height: 96px; }
+.card[data-card="31"] { background-position: -2190px 0; width: 72px; height: 96px; }
+.card[data-card="32"] { background-position: -2263px 0; width: 72px; height: 96px; }
+.card[data-card="33"] { background-position: -2336px 0; width: 72px; height: 96px; }
+.card[data-card="34"] { background-position: -2409px 0; width: 72px; height: 96px; }
+.card[data-card="35"] { background-position: -2482px 0; width: 72px; height: 96px; }
+.card[data-card="36"] { background-position: -2555px 0; width: 72px; height: 96px; }
+.card[data-card="37"] { background-position: -2628px 0; width: 72px; height: 96px; }
+.card[data-card="38"] { background-position: -2701px 0; width: 72px; height: 96px; }
+.card[data-card="39"] { background-position: -2774px 0; width: 72px; height: 96px; }
+.card[data-card="40"] { background-position: -2847px 0; width: 72px; height: 96px; }
+.card[data-card="41"] { background-position: -2920px 0; width: 72px; height: 96px; }
+.card[data-card="42"] { background-position: -2993px 0; width: 72px; height: 96px; }
+.card[data-card="43"] { background-position: -3066px 0; width: 72px; height: 96px; }
+.card[data-card="44"] { background-position: -3139px 0; width: 72px; height: 96px; }
+.card[data-card="45"] { background-position: -3212px 0; width: 72px; height: 96px; }
+.card[data-card="46"] { background-position: -3285px 0; width: 72px; height: 96px; }
+.card[data-card="47"] { background-position: -3358px 0; width: 72px; height: 96px; }
+.card[data-card="48"] { background-position: -3431px 0; width: 72px; height: 96px; }
+.card[data-card="49"] { background-position: -3504px 0; width: 72px; height: 96px; }
+.card[data-card="50"] { background-position: -3577px 0; width: 72px; height: 96px; }
+.card[data-card="51"] { background-position: -3650px 0; width: 72px; height: 96px; }
+*/

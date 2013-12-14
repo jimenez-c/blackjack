@@ -1,0 +1,68 @@
+<h2 class="pull-left">Liste des parties</h2>
+
+<a href="#params" data-toggle="modal" role="button" class="btn btn-primary pull-right">Créer une partie</a>
+
+<table id="games" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Joueurs</th>
+            <th>Nombre de joueurs</th>
+            <th>Commencée depuis</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr data-game-id="15">
+            <td>John, Bob, Cyril</td>
+            <td>3</td>
+            <td>05:38</td>
+        </tr>
+
+        <tr data-game-id="9">
+            <td>Bill, Joe</td>
+            <td>2</td>
+            <td>12:44</td>
+        </tr>
+
+        <tr data-game-id="4">
+            <td>Jack, Kim, Alex, Sam, Charlie</td>
+            <td>5</td>
+            <td>00:12</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div id="params" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="paramsLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="paramsLabel">Paramètres de la partie</h3>
+    </div>
+    <div class="modal-body">
+        <form method="post" action="#" class="form-horizontal">
+            <div class="control-group">
+		<label class="control-label">Nombre de bots</label>
+		<div class="controls btn-group" data-toggle="buttons-radio">
+
+                    <button type="button" class="btn btn-primary">1</button>
+                    <button type="button" class="btn btn-primary">2</button>
+                    <button type="button" class="btn btn-primary">3</button>
+                    <button type="button" class="btn btn-primary">4</button>
+                    <button type="button" class="btn btn-primary">5</button>
+<!--                    <div class="btn-group" data-toggle="buttons-radio">
+                        <button type="button" class="btn btn-primary">1</button>
+                        <button type="button" class="btn btn-primary">2</button>
+                        <button type="button" class="btn btn-primary">3</button>
+                        <button type="button" class="btn btn-primary">4</button>
+                        <button type="button" class="btn btn-primary">5</button>
+                    </div>-->
+		</div>
+            </div>
+
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Annuler</button>
+        <button class="btn btn-primary">Lancer</button>
+    </div>
+</div>

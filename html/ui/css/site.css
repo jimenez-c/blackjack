@@ -1,0 +1,38 @@
+* {
+	margin:0;
+	padding: 0;
+}
+body {
+
+}
+
+.navbar {
+	margin-bottom: 20px;
+}
+.navbar .brand {
+	background: url("../img/test-clubs.png") no-repeat 0 50%;
+	padding-left:40px;
+}
+h2 {
+	margin:10px;
+}
+
+table#games tbody tr:hover {
+	cursor: pointer;
+}
+
+.navbar .container ul.pull-right li a {
+	color: #DADADA;
+}
+.navbar .container ul.pull-right li a:hover {
+	color:#FFF;
+}
+.test {
+	font-size: 50px;
+}
+.test p {
+	margin:50px;
+}
+.test p.red {
+	color:red;
+}

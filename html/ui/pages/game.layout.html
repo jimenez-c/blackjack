@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Partie en cours :: Black Jack</title>
+		<link href="ui/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="ui/css/game.css">
+		<link rel="icon" type="image/png" href="ui/img/test-clubs.png" />
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<?php echo $content; ?>
+			</div>
+		</div>
+
+		<nav id="menu" class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+			<div class="navbar-inner">
+				<div class="pull-left">
+					<!-- <a href="#" class="btn btn-large">Test</a> -->
+				</div>
+				<div class="pull-right">
+					<a href="index.php" class="btn btn-large pull-right">Quitter</a>
+				</div>
+				<div class="center">
+					<button type="button" class="btn btn-primary btn-large navbar-btn">Carte</button>
+					<button type="button" class="btn btn-danger btn-large navbar-btn">Stop</button>
+				</div>
+			</div>
+		</nav>
+		<!-- <div id="menu">
+			<button type="button" class="btn btn-primary btn-large">Carte</button>
+			<button type="button" class="btn btn-danger btn-large">Stop</button>
+			<span id="notif" class="text-success">Tour de <strong>John</strong>.</span>
+		</div> -->
+    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="ui/js/bootstrap.min.js"></script>
+	</body>
+</html>
